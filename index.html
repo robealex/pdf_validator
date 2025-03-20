@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Archivos PDF en Carpeta</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Validador de Archivos PDF en Carpeta</h2>
+    <input type="file" id="carpeta" webkitdirectory multiple>
+    <br><br>
+    <label for="fechaInicio">Fecha de Inicio:</label>
+    <input type="date" id="fechaInicio">
+    <label for="fechaFin">Fecha de Fin:</label>
+    <input type="date" id="fechaFin">
+    <button id="validar">Validar PDFs</button>
+
+
+    <h3>Archivos Dañados:</h3>
+    <ul id="resultado"></ul>
+
+    <p id="mensajeEspera">Procesando archivos, por favor espera...</p>
+    <button id="exportar" style="display:none;">Exportar Errores</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
